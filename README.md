@@ -232,14 +232,14 @@ in ```master``` (which we merged from ```approach_a```) conflicts with the versi
 If we look at the contents of ```howdy.txt```, we see the following:
 ```
 <<<<<<< HEAD
-howdy from A
+Howdy from A
 =======
-howdy from B
+Howdy from B
 >>>>>>> approach_b
 ```
 Using a text editor, we modify the file (in the ```master``` branch) to the following:
 ```
-howdy from A and B
+Howdy from A and B
 ```
 We then run
 ```
