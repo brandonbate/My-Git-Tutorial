@@ -29,11 +29,12 @@ a local Git repository with a repository on GitHub can be tricky. We'll
 cover the details of that later. For now, we're just going to focus on
 using Git on our local machines (i.e. no internet).
 
-The first step to using git is to have git create a repository to store
-our commits. If we are working on a project in a folder called 
-```my_folder```, we should probably put our repository in this folder.
+I assume you already have Git installed on your computer.
+Once it is installed, you can then create a repository to store commits.
+If we are working on a project in a folder called 
+```my_folder```, we can put a Git repository for this project in this folder.
 Navigate to this folder in your command console (using the ```cd``` command).
-We then have Git create a repository for us in this folder with the
+We then have Git create a repository in this folder with the
 following command:
 ```
 git init .
