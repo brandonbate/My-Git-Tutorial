@@ -117,7 +117,7 @@ Once a ```.gitignore``` file is created or editted, we must stage and
 commit it for changes to take effect.
 
 Once we have a ```.gitignore``` in our repository, it's much easier
-to stage and commit. The command
+to stage and commit files in our project. The command
 ```
 git add .
 ```
