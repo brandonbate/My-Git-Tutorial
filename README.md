@@ -48,7 +48,7 @@ as either **tracked** or **untracked**. When we first create a
 repository, all files are untracked. An untracked file
 has no "snapshots" of it within the repository. In short, we cannot
 click "undo" on untracked files. 
-The following command tells Git to make ```my_file``` into a tracked file.
+The following command tells Git to make ```my_file``` into a tracked file:
 ```
 git add my_file
 ```
