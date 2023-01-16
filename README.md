@@ -211,3 +211,21 @@ Likewise, ```goodbye.txt``` does not appear in the ```master``` and ```approach_
 You will not find ```howdy.txt``` in the ```master``` branch,
 but it will be in both the ```approach_a``` and ```approach_b``` branches, albeit different versions.
 
+### Merging branches
+Multiple branches are useful when we are exploring multiple approaches concurrently, but our end goal is to merge
+these branches together back into the ```master``` branch. The following merges ```approach_a``` into ```master```:
+```
+git checkout master
+git merge approach_a
+```
+The files ```hello.txt``` and ```howdy.txt``` are now in ```master```.
+We can then delete the ```approach_a``` branch since it is merged back with ```master```:
+```
+git branch -d approach_a
+```
+If we attempt to merge ```approach_b``` into ```master```, we will run into trouble:
+```
+git merge approach_b
+```
+The error message indicates that we are unable to merge ```howdy.txt``` into ```master``` because the version of ```howdy.txt``` already 
+in ```master``` (which we merged from ```approach_a```) conflicts with the version of ```howdy.txt``` in ```approach_b```.
