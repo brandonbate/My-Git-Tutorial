@@ -247,3 +247,11 @@ git add howdy.txt
 git commit -m "resolving conflict"
 ```
 to complete the merge of ```approach_b``` into ```master```.
+
+### Remote repositories
+
+Online services like GitHub allow users to create local machine copies of hosted repositories.
+For instance, we can create a copy of this repository by running:
+```
+git clone 
+```
