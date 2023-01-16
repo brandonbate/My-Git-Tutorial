@@ -1,5 +1,6 @@
 # My Git Tutorial
 
+### About Git
 Git is a version control system. Think of a version control system
 as a grand "undo" system. 
 When working on a word processor, we can "undo" what we typed. We are
@@ -29,6 +30,8 @@ a local Git repository with a repository on GitHub can be tricky. We'll
 cover the details of that later. For now, we're just going to focus on
 using Git on our local machines (i.e. no internet).
 
+### Creating a repository on a local machine
+
 I assume you already have Git installed on your computer.
 Once it is installed, you can then create a repository to store commits.
 If we are working on a project in a folder called 
@@ -40,12 +43,13 @@ following command:
 git init .
 ```
 
+### What Git tracks
+
 Git classifies every file within ```my_folder``` (and its subfolders)
 as either **tracked** or **untracked**. When we first create a
 repository, all files are untracked. An untracked file
 has no "snapshots" of it within the repository. In short, we cannot
 click "undo" on untracked files. 
-
 
 This command tells Git to make ```my_file``` into a tracked file.
 ```
@@ -90,6 +94,8 @@ It's the modified version of the file. Again, beginners are encouraged
 to never have files that are both staged and modified. You can remedy
 this by "re-adding" the file before performing the commit.
 
+### See what's changed
+
 Often when you work on a project, you won't remember what files
 you've changed. When that happens, you can use ```git status``` to see
 what files are untracked or modified. But the output of ```git status```
@@ -104,6 +110,8 @@ and your latest commit, run
 ```
 git diff --staged
 ```
+
+### Ignoring files and easy adding/committing
 
 When programming, we often generate files we'd rather not include in our
 repository. Such files can include logs and executables (i.e. binaries).
@@ -137,6 +145,8 @@ repository. But if you create a new (untracked) file, then the above
 command will NOT add it to the repository. Your best bet in this instance
 is to use the old-fashioned two step method.
 
+### Removing a file from a repository
+
 Sometimes we need to delete a file from our project. If we simply
 delete the file from our local system, Git is going to notice its
 disappearance.  But hope springs eternal with Git. It keeps hoping
@@ -148,6 +158,8 @@ officially over, use the command
 ```
 git rm my_file
 ```
+
+### About branching
 
 Complex projects often encounter problems where more than one solution comes to mind. When that happens,
 we might want to explore these various solution options concurrently. You might do this by simply
