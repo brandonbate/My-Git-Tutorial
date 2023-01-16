@@ -135,7 +135,7 @@ The ```-a``` flag tells git to stage every tracked file. This command
 works great when you want to update existing files tracked in your 
 repository. But if you create a new (untracked) file, then the above
 command will NOT add it to the repository. Your best bet in this instance
-is to use the old-fashioned two step method in this instance.
+is to use the old-fashioned two step method.
 
 Sometimes we need to delete a file from our project. If we simply
 delete the file from our local system, Git is going to notice its
