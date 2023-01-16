@@ -14,7 +14,7 @@ of the various edits you make to files in a project. In a word
 processor, this record of changes is made for you automatically. When
 programming, we have to manually specify "snapshots" of our files that
 we can then "undo" back to if needed. These "snapshots" are called 
-"commits". The collection of "commits" we create for a project is called
+**commits**. The collection of "commits" we create for a project is called
 a "repository". With a repository, we can "go back in time" to a prior
 a prior commit. All of these operations are typically done through a
 command console.
