@@ -251,7 +251,8 @@ to complete the merge of ```approach_b``` into ```master```.
 ### Remote repositories
 
 Online services like GitHub allow users to create local machine copies of hosted repositories.
-For instance, we can create a copy of this repository by running:
+These hosted repositories are called **remotes**.
+For instance, we can create a copy of a remote by running:
 ```
 git clone https://github.com/brandonbate/My-Git-Tutorial.git
 ```
@@ -261,4 +262,14 @@ If we run ```git status```, we will see the following:
 ```
 On branch main
 Your branch is up to date with 'origin/main'.
+```
+This tells that on our local machine, we are the ```main``` branch of our copy of this repository and
+that this ```main``` branch is "up to date" with ```origin/main```.
+This means that our local repository is being built off the latest commit on the main branch of the remote repository.
+If that main branch were to be updated, say by editting a file, then
+
+Git uses ```origin``` as a reference to the remote repository we cloned from.
+We can see the actual web address for this repository by running
+```
+git remote -v
 ```
