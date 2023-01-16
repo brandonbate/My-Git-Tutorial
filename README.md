@@ -53,8 +53,8 @@ The following command tells Git to make ```my_file``` into a tracked file:
 git add my_file
 ```
 A tracked file can be in one of three states: **unmodified**, **modified**
-or **staged**. The above command automatically puts our untracked
-file in the staged state.
+or **staged**. The above command automatically make ```my_file``` a tracked file
+in the staged state.
 Technically, we still don't yet have a snapshot of ```my_file``` in our
 repository. Git wants to allow us to add more files to include in our
 snapshot. Staged files are simply files that we intend to take a snapshot
