@@ -149,3 +149,18 @@ officially over, use the command
 git rm my_file
 ```
 
+Complex projects often encounter problems where more than one solution comes to mind. When that happens,
+we might want to explore these various solution options concurrently. You might do this by simply
+duplicating your project on your local machine and having two different versions of your project, one
+which explores approach A and another that explores approach B. This is a fine solution if in the
+end you will one of these approaches is the "take all winner". But in reality, you migth find that
+elements of each approach find there way into the final version. Consolidating these two separate
+branches of your project then becomes a real challenge. Git allows us to easily explore multiple solutions
+(without needlessly duplciating files) and enables
+us to easily recombine appropriate code portions from each approach into a final solution.
+
+You might have noticed that when you run ```git status``` you encountered the following text:
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+```
