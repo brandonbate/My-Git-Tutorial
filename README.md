@@ -7,8 +7,9 @@ able to, essentially, "go back in time" to prior version of our document.
 Programmers need this same functionality. But with programming, rather
 than simply editting one file, we edit multiple files. Because of that,
 it can be difficult to orchestrate all the "undos" we performed on our
-various files. Version control systems help us manage this. Git is a
-version control system. Git runs on your local machine to keep a record
+various files. Version control systems help us manage this.
+
+Git runs on your local machine to keep a record
 of the various edits you make to your files in a project. In a word
 processor, this record of changes is made for you automatically. When
 programming, we have to manually specify "snapshots" of our files that
