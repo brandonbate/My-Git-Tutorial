@@ -156,7 +156,7 @@ officially over, use the command
 git rm my_file
 ```
 
-### About branching
+### Branching
 
 Complex projects often encounter problems where more than one solution comes to mind. When that happens,
 we might want to explore these various solution options concurrently. You might do this by simply
@@ -206,7 +206,8 @@ git add .
 git commit -m "Added goodbye.txt"
 ```
 Try navigating to different branches using ```git checkout```. When you list the directory contents with ```ls```, you will
-find that ```hello.txt``` does not appear in the ```master``` and ```approach_b``` branches, and likewise
-```goodbye.txt``` does not appear in the ```master``` and ```approach_a```. You will not find ```howdy.txt`` in the ```master``` branch,
+find that ```hello.txt``` does not appear in the ```master``` and ```approach_b``` branches.
+Likewise, ```goodbye.txt``` does not appear in the ```master``` and ```approach_a``` branches.
+You will not find ```howdy.txt``` in the ```master``` branch,
 but it will be in both the ```approach_a``` and ```approach_b``` branches, albeit different versions.
 
