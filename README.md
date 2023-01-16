@@ -265,11 +265,20 @@ Your branch is up to date with 'origin/main'.
 ```
 This tells that on our local machine, we are the ```main``` branch of our copy of this repository and
 that this ```main``` branch is "up to date" with ```origin/main```.
-This means that our local repository is being built off the latest commit on the main branch of the remote repository.
-If that main branch were to be updated, say by editting a file, then
-
 Git uses ```origin``` as a reference to the remote repository we cloned from.
 We can see the actual web address for this repository by running
 ```
 git remote -v
+```
+
+Over time, we should expect the remote repository (i.e. ```origin```) to mutate.
+You'd think that running ```git status``` would tell us if our copy of the repository is incompatible with
+the online version.
+It doesn't. When it says our repository is "up to date" it simply means that, last time it checked, its up to date.
+And if you've been working on this repository locally the whole time, the "last time it checked" was when you
+cloned it.
+That means that when we work with remote repository, we need to manually tell Git to check if our copy is up to date.
+We do this by running
+```
+git fetch
 ```
