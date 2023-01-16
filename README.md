@@ -161,15 +161,52 @@ git rm my_file
 Complex projects often encounter problems where more than one solution comes to mind. When that happens,
 we might want to explore these various solution options concurrently. You might do this by simply
 duplicating your project on your local machine and having two different versions of your project, one
-which explores approach A and another that explores approach B. This is a fine solution if in the
-end you will one of these approaches is the "take all winner". But in reality, you migth find that
-elements of each approach find there way into the final version. Consolidating these two separate
+that explores approach A and another that explores approach B. This is a fine solution if in the
+end you will one of these approaches is the "winner take all". But in reality, you might find that
+portions of each approach find there way into the final version. Consolidating these two separate
 branches of your project then becomes a real challenge. Git allows us to easily explore multiple solutions
 (without needlessly duplciating files) and enables
 us to easily recombine appropriate code portions from each approach into a final solution.
 
-You might have noticed that when you run ```git status``` you encountered the following text:
+When we create a Git repository, we have an accompanying **branch** created.
+You might have already seen references to it.
+When you run ```git status```, yo shouldu encounter the following text:
 ```
 On branch master
-Your branch is up to date with 'origin/master'.
 ```
+This tells us that our repository is on a branch called "master".
+Every git repository has a ```master``` or ```main``` branch.
+
+Suppose we want to explore two separate branches distinct from the master branch. We can do this
+with the following commands:
+```
+git branch approach_a
+git branch approach_b
+```
+Now we have three branches: ```master```, ```approach_a``` and ```approach_b```.
+A quick look at the command prompt should show that we are still in the ```master``` branch.
+The following command switches to the ```approach_a``` branch:
+```
+git checkout approach_a
+```
+Any changes we make in this branch will not not appear in the others.
+We can test this out by creating a quickly creating some files in the approach_a branch of the repository:
+```
+echo "Hello from A" > hello.txt
+echo "Howdy from A" > howdy.txt
+git add .
+git commit -m "Added hello.txt"
+```
+Let's also create some files in approach_b branch of the repository:
+```
+git checkout approach_b
+echo "Goodbye from B" > goodbye.txt
+echo "Howdy from B" > howdy.txt
+git add .
+git commit -m "Added goodbye.txt"
+```
+Try navigating to different branches using ```git checkout```. When you list the directory contents with ```ls```, you will
+find that ```hello.txt``` does not appear in the ```master``` and ```approach_b``` branches, and likewise
+```goodbye.txt``` does not appear in the ```master``` and ```approach_a```. You will not find ```howdy.txt`` in the ```master``` branch,
+but it will be in both the ```approach_a``` and ```approach_b``` branches, albeit different versions.
+
