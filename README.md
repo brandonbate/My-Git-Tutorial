@@ -71,7 +71,7 @@ a particular commit you want to revert back to or reference.
 
 Whenever you edit a tracked file, it will automatically change to the
 modified state. A tracked modified file is a file that is out of
-sync with our repositories commits. Beginners are encouraged to
+sync with our latest commit. Beginners are encouraged to
 never perform a commit when there are tracked modified files present
 in your project because that means you are essentially not "backing up"
 some of the edits you made. You can check if there are any tracked
