@@ -2,8 +2,6 @@
 
 Git is a version control system. Think of a version control system
 as a grand "undo" system. 
-
-
 When working on a word processor, we can "undo" what we typed. We are
 able to, essentially, "go back in time" to prior version of our document.
 Programmers need this same functionality. But with programming, rather
