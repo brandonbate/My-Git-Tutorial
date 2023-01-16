@@ -24,7 +24,7 @@ it, I want to emphasize that Git and GitHub are fundamentally distinct.
 Git is a version control system that simply runs on your local machine
 (no internet connectivity required).
 GitHub is an online service that allows you to share your repositories
-with others and allows other users to update the repositories. Connecting
+with others and allows other users to view and (possibly) edit your repositories. Connecting
 a local Git repository with a repository on GitHub can be tricky. We'll
 cover the details of that later. For now, we're just going to focus on
 using Git on our local machines (i.e. no internet).
