@@ -11,8 +11,8 @@ various files. Version control systems help us manage this.
 
 Git runs on your local machine and keeps a record
 of the various edits you make to files in a project. In a word
-processor, this record of changes is made for you automatically. When
-programming, we have to manually specify "snapshots" of our files that
+processor, this record of changes is made for you automatically. With Git,
+we have to manually specify "snapshots" of our files that
 we can then "undo" back to if needed. These "snapshots" are called 
 **commits**. The collection of commits we create for a project is called
 a **repository**. With a repository, we can "go back in time" to a prior commit. 
