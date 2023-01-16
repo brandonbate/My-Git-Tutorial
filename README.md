@@ -10,7 +10,7 @@ it can be difficult to orchestrate all the "undos" we performed on our
 various files. Version control systems help us manage this.
 
 Git runs on your local machine and keeps a record
-of the various edits you make to your files in a project. In a word
+of the various edits you make to files in a project. In a word
 processor, this record of changes is made for you automatically. When
 programming, we have to manually specify "snapshots" of our files that
 we can then "undo" back to if needed. These "snapshots" are called 
