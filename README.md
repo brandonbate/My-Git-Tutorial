@@ -107,7 +107,7 @@ git diff --staged
 
 When programming, we often generate files we'd rather not include in our
 repository. Such files can include logs and executables (i.e. binaries).
-Typically, we want to our repository to contain only source code and
+Typically, we want our repository to contain only source code and
 configuration files. We can tell Git to always ignore certain files
 by including them in a ```.gitignore``` file. The ```.gitignore``
  file can consist
