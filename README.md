@@ -253,5 +253,12 @@ to complete the merge of ```approach_b``` into ```master```.
 Online services like GitHub allow users to create local machine copies of hosted repositories.
 For instance, we can create a copy of this repository by running:
 ```
-git clone 
+git clone https://github.com/brandonbate/My-Git-Tutorial.git
+```
+This will create a folder called ```My-Git-Tutorial``` within the working directory.
+When we navigate to this folder, we'll find we are automatically in the ```main``` branch for this repository.
+If we run ```git status```, we will see the following:
+```
+On branch main
+Your branch is up to date with 'origin/main'.
 ```
