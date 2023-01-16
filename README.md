@@ -90,7 +90,7 @@ It's the modified version of the file. Again, beginners are encouraged
 to never have files that are both staged and modified. You can remedy
 this by "re-adding" the file before performing the commit.
 
-Often when you work on a project, you don't always remember what files
+Often when you work on a project, you won't remember what files
 you've changed. When that happens, you can use ```git status``` to see
 what files are untracked or modified. But the output of ```git status```
 can be a bit verbose. Moreover, it doesn't necessarily show you what
