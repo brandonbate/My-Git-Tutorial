@@ -56,7 +56,7 @@ and **staged**. The above command automatically puts our untracked
 file in the staged state.
 Technically, we still don't yet have a snapshot of ```my_file``` in our
 repository. Git wants to allow us to add more files to include in our
-snapshot. Staged files are simply files that we intend to take snapshot
+snapshot. Staged files are simply files that we intend to take a snapshot
 of shortly. Once we are done staging/adding files, we can then take
 a snapshot with the following command:
 ```
