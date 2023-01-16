@@ -36,8 +36,7 @@ Once it is installed, you can then create a repository to store commits.
 If we are working on a project in a folder called 
 ```my_folder```, we can put a Git repository for this project in this folder.
 Navigate to this folder in your command console (using the ```cd``` command).
-We then have Git create a repository in this folder with the
-following command:
+The following command then creates a repository in this folder:
 ```
 git init .
 ```
