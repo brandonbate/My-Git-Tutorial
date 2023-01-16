@@ -4,7 +4,7 @@
 Git is a version control system. 
 I find it  helpful (and somewhat inaccurate) to think of a version control system as a grand "undo" system. 
 When working on a word processor, we can "undo" what we typed by essentially "going back in time" to a prior version of our document.
-Programmers need this same functionality. But with programming, rather
+Programmers need this same type functionality. But with programming, rather
 than simply editting one file, we edit multiple files. Because of that,
 it can be difficult to orchestrate all the "undos" we performed on our
 various files. Version control systems help us manage this.
