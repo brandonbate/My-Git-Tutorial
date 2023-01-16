@@ -229,3 +229,21 @@ git merge approach_b
 ```
 The error message indicates that we are unable to merge ```howdy.txt``` into ```master``` because the version of ```howdy.txt``` already 
 in ```master``` (which we merged from ```approach_a```) conflicts with the version of ```howdy.txt``` in ```approach_b```.
+If we look at the contents of ```howdy.txt```, we see the following:
+```
+<<<<<<< HEAD
+howdy from A
+=======
+howdy from B
+>>>>>>> approach_b
+```
+Using a text editor, we modify the file (in the ```master``` branch) to the following:
+```
+howdy from A and B
+```
+We then run
+```
+git add howdy.txt
+git commit -m "resolving conflict"
+```
+to complete the merge of ```approach_b``` into ```master```.
