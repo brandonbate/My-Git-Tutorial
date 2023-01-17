@@ -189,7 +189,7 @@ The following command switches to the ```approach_a``` branch:
 ```
 git checkout approach_a
 ```
-Any changes we make in this branch will not not appear in the others.
+Any changes we make in this branch will not not appear in the others (provided we perform a commit!).
 We can test this out by creating a quickly creating some files in the approach_a branch of the repository:
 ```
 echo "Hello from A" > hello.txt
