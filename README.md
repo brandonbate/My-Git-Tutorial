@@ -335,8 +335,24 @@ On local machines, the default branch ```master```, but on Github its ```main```
 The command ```git push -u origin main``` moves the content in your local machine repository to the remote repository.
 The ```-u``` flag tells Git to keep the ```main``` branch on our local machine linked to the ```main``` branch on the remote repository.
 
-When performing a **push**, you will be prompted to enter in your github credentials.
+When performing a **push**, you will be prompted to enter in your GitHub credentials.
 You cannot push to a remote repository unless you have permissions to do so.
 When you create a repository, you automatically get permissions to push.
+When you own a remote repository, you can allow other users to have permission to push to your remote repository.
+
+## Forks and Pull Requests
+
+This section is brief because it gives a conceptual overview of GitHub's workflow.
+Imagine you are managing a large project with thousands of potential contributers.
+In a situation like this, you do not want to allow all these potential contributers to have permission to push to your repository.
+Instead, GitHub allows users to create a **fork** of your repository.
+A fork essentially creates a copy of the target repository that the user can then edit.
+The user can also keep their copy up to date with the target repository when it changes.
+
+Imagine a user has added a new feature to a forked version of your repository.
+That user can suggest you add their code to your repository by creating a **pull request** on GitHub.
+This is distinct from using ```git pull```.
+A pull request basically allows the owner of a repository to merge one of the contributer's branch into the ```main```
+branch for the remote repository.
 
 
