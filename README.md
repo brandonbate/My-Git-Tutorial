@@ -170,7 +170,7 @@ us to easily recombine appropriate code portions from each approach into a final
 
 When we create a Git repository, we have an accompanying **branch** created.
 You might have already seen references to it.
-When you run ```git status```, yo shouldu encounter the following text:
+When you run ```git status```, you should encounter the following text:
 ```
 On branch master
 ```
