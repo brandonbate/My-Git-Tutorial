@@ -301,4 +301,42 @@ git pull
 ```
 If you are familiar with GitHub, you may have seen the term "Pull Request". That's something different that we'll get to shortly.
 
+### Pushing
+
+GitHub is one of the most popular services for hosting remote repositories.
+If you haven't already, go to github.com and create an account.
+Once you are logged in, you can create repository by clicking the "New" button (currenty green and located on the left).
+After creating a repository, GitHub graciously provides you with commands to link this newly created remote repository
+with your local computer. If you are starting a brand new project and have no files yet created, GitHub will
+recommend you run something like this from an appropriate working directory:
+```
+echo "# Example" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/brandonbate/Example.git
+git push -u origin main
+```
+If you already have files in your working directory you should instead create local repository as described in the prior sections
+(use ```git init .```). After doing that, you can force the remote repository to update to your local machine version:
+```
+git remote add origin https://github.com/brandonbate/Example.git
+git branch -M main
+git push -u origin main
+```
+
+Both of these options introduce new commands. The ```git remote add origin https://github.com/brandonbate/Example.git``` adds
+a link to the remote repository to our local machine repository. When we use ```git clone my_url```, Git automatically
+perform ```git remote add origin my_url``` for us.
+
+Another new command is ```git branch -M main```. This tells our local machine repository to rename the ```master``` branch to ```main```.
+On local machines, the default branch ```master```, but on Github its ```main```, until we run this command.
+The command ```git push -u origin main``` moves the content in your local machine repository to the remote repository.
+The ```-u``` flag tells Git to keep the ```main``` branch on our local machine linked to the ```main``` branch on the remote repository.
+
+When performing a **push**, you will be prompted to enter in your github credentials.
+You cannot push to a remote repository unless you have permissions to do so.
+When you create a repository, you automatically get permissions to push.
+
 
