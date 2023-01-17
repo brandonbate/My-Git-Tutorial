@@ -252,7 +252,7 @@ to complete the merge of ```approach_b``` into ```master```.
 
 Online services like GitHub allow users to create local machine copies of hosted repositories.
 These hosted repositories are called **remotes**.
-For instance, we can create a copy of a remote by running:
+For instance, we can create a copy of this repository by running:
 ```
 git clone https://github.com/brandonbate/My-Git-Tutorial.git
 ```
