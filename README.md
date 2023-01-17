@@ -275,10 +275,28 @@ Over time, we should expect the remote repository (i.e. ```origin```) to mutate.
 You'd think that running ```git status``` would tell us if our copy of the repository is incompatible with
 the online version.
 It doesn't. When it says our repository is "up to date" it simply means that, last time it checked, its up to date.
-And if you've been working on this repository locally the whole time, the "last time it checked" was when you
-cloned it.
+If you've been working on this repository locally the whole time, the "last time it checked" was when you cloned it.
 That means that when we work with remote repository, we need to manually tell Git to check if our copy is up to date.
 We do this by running
 ```
 git fetch
 ```
+
+Running ```git fetch``` will not change youre local machine's repository. Your files won't suddenly be updated.
+But ```git fetch``` will get information on all the branches and commits on the remote repository.
+With that information, you can update your local machine by merging your local machine's ```main``` branch with the
+the ```origin/main``` branch (just updated by ```git fetch```):
+```
+git merge origin/main
+```
+Beware that when you call ```git merge origin/main```, you are merging the ```origin/main``` that existed on the
+remote repository at the time you called ```git fetch```. If someone updates the remote repository in between the
+time you call ```git fetch``` and ```git merge origin/main```, then your local machine's repository will not have
+that most recent update.
+
+As with adding and committing, some folks would prefer we have a single command for fetching and merging.
+You can do this by running
+```git pull```
+If you are familiar with GitHub, you may have seen the term "Pull Request". That's something different that we'll get to shortly.
+
+
