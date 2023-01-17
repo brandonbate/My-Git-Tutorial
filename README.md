@@ -340,7 +340,7 @@ You cannot push to a remote repository unless you have permissions to do so.
 When you create a repository, you automatically get permissions to push.
 When you own a remote repository, you can allow other users to have permission to push to your remote repository.
 
-## Forks and Pull Requests
+### Forks and Pull Requests
 
 This section is brief because it gives a conceptual overview of GitHub's workflow.
 Imagine you are managing a large project with thousands of potential contributers.
@@ -355,4 +355,32 @@ This is distinct from using ```git pull```.
 A pull request basically allows the owner of a repository to merge one of the contributer's branch into the ```main```
 branch for the remote repository.
 
+### Restoring
 
+Inevitably, you will want to use Git to restore a file to a version from a previous commit.
+How you do this will depend upon how far along you are past that point you want to restore to.
+For instance, if you accidentally deleted ```my_file``` and haven't staged any files for a commit, you can quickly
+restore to the version in the last commit by running:
+```
+git restore my_file
+```
+If you have already staged files but not yet committed, then you will need to run this command instead:
+```
+git restore --staged --worktree my_file
+```
+If you want to restore a file to a version on a past commit, you will need to look up the id for that commit.
+There are a variety of ways to do this.
+One option is to run:
+```
+git log
+```
+This will show all the commits on the repository. Another option is to run:
+```
+git log -- my_file
+```
+This will identify all commits where the file has been changed.
+Once you have your commit id, you can restore a file from that commit with the following:
+```
+git checkout [insert commit id here] -- my_file
+git commit -m 'restored my_file'
+```
