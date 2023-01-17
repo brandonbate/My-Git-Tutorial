@@ -195,7 +195,7 @@ We can test this out by creating a quickly creating some files in the approach_a
 echo "Hello from A" > hello.txt
 echo "Howdy from A" > howdy.txt
 git add .
-git commit -m "Added hello.txt"
+git commit -m "Added hello.txt and howdy.txt"
 ```
 Let's also create some files in approach_b branch of the repository:
 ```
@@ -203,7 +203,7 @@ git checkout approach_b
 echo "Goodbye from B" > goodbye.txt
 echo "Howdy from B" > howdy.txt
 git add .
-git commit -m "Added goodbye.txt"
+git commit -m "Added goodbye.txt and howdy.txt"
 ```
 Try navigating to different branches using ```git checkout```. When you list the directory contents with ```ls```, you will
 find that ```hello.txt``` does not appear in the ```master``` and ```approach_b``` branches.
