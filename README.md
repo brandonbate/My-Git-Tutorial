@@ -162,7 +162,7 @@ Complex projects often encounter problems where more than one solution comes to 
 we might want to explore these various solution options concurrently. You might do this by simply
 duplicating your project on your local machine and having two different versions of your project, one
 that explores approach A and another that explores approach B. This is a fine solution if in the
-end you will one of these approaches is the "winner take all". But in reality, you might find that
+end one of these approaches is the "winner take all". But in reality, you might find that
 portions of each approach find there way into the final version. Consolidating these two separate
 branches of your project then becomes a real challenge. Git allows us to easily explore multiple solutions
 (without needlessly duplciating files) and enables
