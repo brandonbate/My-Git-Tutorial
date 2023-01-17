@@ -329,9 +329,8 @@ git push -u origin main
 Both of these options introduce new commands. The ```git remote add origin https://github.com/brandonbate/Example.git``` adds
 a link to the remote repository to our local machine repository. When we use ```git clone my_url```, Git automatically
 perform ```git remote add origin my_url``` for us.
-
 Another new command is ```git branch -M main```. This tells our local machine repository to rename the ```master``` branch to ```main```.
-On local machines, the default branch ```master```, but on Github its ```main```, until we run this command.
+On local machines, the default branch is ```master```, but on Github its ```main```, until we run this command.
 The command ```git push -u origin main``` moves the content in your local machine repository to the remote repository.
 The ```-u``` flag tells Git to keep the ```main``` branch on our local machine linked to the ```main``` branch on the remote repository.
 
