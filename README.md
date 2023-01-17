@@ -296,7 +296,9 @@ that most recent update.
 
 As with adding and committing, some folks would prefer we have a single command for fetching and merging.
 You can do this by running
-```git pull```
+```
+git pull
+```
 If you are familiar with GitHub, you may have seen the term "Pull Request". That's something different that we'll get to shortly.
 
 
