@@ -97,8 +97,8 @@ Often when you work on a project, you won't remember what files
 you've changed. When that happens, you can use ```git status``` to see
 what files are untracked or modified. But the output of ```git status```
 can be a bit verbose. Moreover, it doesn't necessarily show you what
-changes you have made. To view the files you've editted but have not
-yet staged, run:
+changes you have made. To view the changes you made to the tracked files
+you've editted but have not yet staged, run:
 ```
 git diff
 ```
