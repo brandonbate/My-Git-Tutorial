@@ -383,3 +383,38 @@ Once you have your commit id, you can restore a file from that commit with the f
 git checkout [insert commit id here] -- my_file
 git commit -m 'restored my_file'
 ```
+
+### Using SSH Keys
+GitHub repositories can be downloaded and updated via SSH. To do this, we need to generate an authentication key
+on the machine that we intend to access GitHub from. Typically, we'll want one key for our local machine and another
+for our deployment sever. To generate these keys, we will need to use the command console. On your local machine,
+do this by starting up GitBash. For a remote server, such as AWS lightsail, you will need to startup a console
+through the web interface or login through SSH with a username nad password.
+
+One on the command console, run
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+to generate keys. Replace ```"your_email@examples.com"``` with the email account you use with github.
+You will be asked to enter a location for the keys. Accept the default location by pressing Enter.
+You will then be asked to enter a pass phrase. I recommend leaving this blank and pressing Enter because it will
+make our automated deployment code (introduced later in the course) easier to execute.
+
+We need to tell our SSH client about these keys. We do this with the following commands:
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+The keys generated consist of a pair of strings of characters. One of these is the "public key" and the other
+is the "private key". We need to tell GitHub what our public key is. Run the following command to display your
+public key:
+```
+cat ~/.ssh/id_rsa.pub
+```
+Copy this content and then visit github.com and login with your account.
+A drop down menu will appear when you click on your avatar on the top
+right corner; this is a blocky shape image. In the menu, select "Settings".
+In the left-side panel, scroll down and select "SSH GPG keys".
+Click the button that says "New SSH Key". Give a title for your SSH key and paste the content
+of your public key into the "Key" text area. Then click "Add SSH Key".
+Now whenever you access GitHub from your machine, you won't need to enter a Personal Access Token.
