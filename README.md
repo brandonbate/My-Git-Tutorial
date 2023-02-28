@@ -389,7 +389,7 @@ GitHub repositories can be downloaded and updated via SSH. To do this, we need t
 on the machine that we intend to access GitHub from. Typically, we'll want one key for our local machine and another
 for our deployment sever. To generate these keys, we will need to use the command console. On your local machine,
 do this by starting up GitBash. For a remote server, such as AWS lightsail, you will need to startup a console
-through the web interface or login through SSH with a username nad password.
+through the web interface or login through SSH with a username and password.
 
 One on the command console, run
 ```
