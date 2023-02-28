@@ -388,14 +388,14 @@ git commit -m 'restored my_file'
 GitHub repositories can be downloaded and updated via SSH. To do this, we need to generate an authentication key
 on the machine that we intend to access GitHub from. Typically, we'll want one key for our local machine and another
 for our deployment sever. To generate these keys, we will need to use the command console. On your local machine,
-do this by starting up GitBash. For a remote server, such as AWS lightsail, you will need to startup a console
+do this by starting up GitBash. For a remote server, such as AWS Lightsail, you will need to startup a console
 through the web interface or login through SSH with a username and password.
 
-One on the command console, run
+Once on the command console, run
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-to generate keys. Replace ```"your_email@examples.com"``` with the email account you use with github.
+to generate keys. Replace ```"your_email@examples.com"``` with the email account you use with GitHub.
 You will be asked to enter a location for the keys. Accept the default location by pressing Enter.
 You will then be asked to enter a pass phrase. I recommend leaving this blank and pressing Enter because it will
 make our automated deployment code (introduced later in the course) easier to execute.
@@ -409,7 +409,7 @@ The keys generated consist of a pair of strings of characters. One of these is t
 is the "private key". We need to tell GitHub what our public key is. Run the following command to display your
 public key:
 ```
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 Copy this content and then visit github.com and login with your account.
 A drop down menu will appear when you click on your avatar on the top
